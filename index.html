@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Byron Morse — Home</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/fonts.css" type="text/css">
+        <link rel="stylesheet" href="styles/nav.css" type="text/css">
+        <link rel="stylesheet" href="styles/fonts.css" type="text/css">
+        <link rel="stylesheet" href="styles/style.css" type="text/css">
+        <link rel="stylesheet" href="styles/img.css" type="text/css">
+        <link rel="stylesheet" href="styles/media.css" type="text/css">
+    <script defer src="scripts/fade.js" type="text/javascript"></script>
+</head>
+<body id="body">
+    <header id="header">
+        <img id="logo" src="media/logos/logo1.png" width="100px">
+        <a id="h1" href="index.html"><h1 id="h1">BYRON MORSE</h1></a>
+        <h2 id="h2">CINEMATOGRAPHER</h2>    
+        <nav id="pageNav">
+            <a id="navHome" class="navItem" href="index.html"><p>Home</p></a>
+            <a id="navAbout" class="navItem" href="about.html"><p>About</p></a>
+            <a id="navReel" class="navItem" href="reel.html"><p>Reel</p></a>
+            <a id="navStills" class="navItem" href="stills.html"><p>Stills</p></a>
+            <a id="navContact" class="navItem" href="contact.html"><p>Contact</p></a>
+            <button id="closeButton" class="navItem" onclick="closeNav()">X</button>
+        </nav>
+        <div id="navButton" onclick="openNav()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="navBg"></div>
+    </header>
+    <main id="mainHome">
+        <h3>Let's Create</h3>
+        <p class="homeSection1">As a director of photography, I continuously perfect my skills in the camera and lighting departments, and use that knowledge to fulfill your vision. With holding a key role in production, I champion collaboration, resourcefulness, and communication when embracing new challenges, and I strive to exceed expectations on our shared creative goals.</p>
+        <div class="reelContainer">    
+            <video id="reel" preload="auto" autoplay muted loop>
+                <source src="https://www.googleapis.com/drive/v3/files/13AwVOWoiWRqNBH40ixDFgOAQlHTWAY1k?alt=media&key=AIzaSyCRhMhwYSHwT1GeZoZmJ4q6h6Mo5D1fO44" type="video/mp4">
+            </video>
+            <!--<video id="reel" preload="auto" autoplay muted loop>
+                <source src="media/reel4x3.mp4" type="video/mp4">
+            </video>-->
+            
+            <div class="footerContainer" id="homeFooterContainer">
+                <footer>
+                    <p>&copy; 2025 My Web Page</p>
+                </footer>
+            </div>
+        </div>
+        <div class="meHome" id="meHome1"></div>
+        <nav class="indexNavContainer">
+            <div class="indexNavWrapper">
+                <a href="about.html" class="indexNavItems hiddenLeft2" id="indexNavItem1">
+                    <div class="indexNavBg">
+                        <p class="indexNavText">About</p>
+                    </div>
+                </a>
+            </div>
+            <div class="indexNavWrapper">
+                <a href="reel.html" class="indexNavItems hiddenLeft2" id="indexNavItem2">
+                    <div class="indexNavBg">
+                        <p class="indexNavText">Reel</p>
+                    </div>
+                </a>
+            </div>
+            <div class="indexNavWrapper">
+                <a href="stills.html" class="indexNavItems hiddenLeft2" id="indexNavItem3">
+                    <div class="indexNavBg">
+                        <p class="indexNavText">Stills</p>
+                    </div>
+                </a>
+            </div>
+            <div class="indexNavWrapper">
+                <a href="contact.html" class="indexNavItems hiddenLeft2" id="indexNavItem4">
+                    <div class="indexNavBg">
+                        <p class="indexNavText">Contact</p>
+                    </div>
+                </a>
+            </div>
+        </nav>
+    </main>
+    <script src="scripts/script1.js" type="text/javascript"></script>
+</body>
+</html>
