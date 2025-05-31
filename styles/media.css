@@ -275,6 +275,7 @@
     }
     .still14 {
         grid-area: 16 / 2 / 17 / 4;
+        margin-top: 45px;
     }
     .indexNavContainer {
         grid-area: 6 / 1 / 7 / 4;
