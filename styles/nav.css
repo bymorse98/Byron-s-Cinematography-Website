@@ -1,0 +1,277 @@
+/* Navigation Bar */
+
+h1:hover {
+    cursor: pointer;
+    text-shadow: 0 0 7px #bef, 0 0 4px #bef;
+}
+
+#pageNav {
+    grid-column: 1 / 13;
+    grid-row: 4/5;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    width: 85%;
+    height: 40px;
+    transition: width 0.5s;
+    margin:0 0 0 25px;
+    z-index: 2;
+}
+
+#pageNav:hover {
+    width: 88%;
+}
+
+.navItem {
+    padding:2px 0 3px 0;
+    font-size: 20px;
+    font-variant: small-caps;
+    letter-spacing: 0.05em;
+    flex-grow: 1;
+    text-align: center;
+    align-self: end;
+    color:#eee;
+    background-color: #002850;
+    border:3px solid #eee;
+    border-left:2px solid #eee;
+    border-right:1px solid #eee;
+    transition: flex-grow 0.5s, transform 0.5s, border-width 0.05s, border-color 0.5s, font-size 0.5s, color 0.1s, flex-grow 0.5s, font-weight 0.1s, text-shadow 0.1s, padding 0.5s, text-decoration 0.1s, width 0.5s;
+    z-index: 1;
+    margin-bottom: 2px;
+    text-decoration: underline #eee 1px;
+}
+
+.navItem:hover {
+    flex-grow:1.2;
+    cursor: pointer;
+    border: 3px solid #00c8ff;
+    font-size: 23px;
+    text-shadow:  0 0 2px #bef, 0 0 5px  #bef ;
+    text-decoration: underline #9ef 2px;
+    font-weight: 500;
+    color:#cef;
+    padding:2px 0 4px 0;
+}
+
+.navItem:active:hover {
+    color:blueviolet;
+    border-color:blueviolet;
+    text-shadow: 0 0 2px blueviolet, 0 0 5px  blueviolet ;
+    text-decoration-color: blueviolet;
+}
+
+#closeButton {
+    position: absolute;
+    height:20px;
+    background-color: #0a1227;
+    padding: 10px;
+    width: 80px;
+    z-index: 3;
+    margin-top: 15px; 
+}
+
+#navButton {
+    visibility: hidden;
+    opacity:0;
+    transition: opacity 0.5s, transform 0.5s, box-shadow 0.5s;
+    z-index: 2;
+}
+
+#navButton:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#navButton:hover div {
+    box-shadow: 0 0 5px #cef, 0 0 10px #00c8ff;
+}
+
+#navButton:hover:active div {
+    box-shadow: 0 0 2px #d8f, 0 0 4px #a3f, 0 0 7px #a3f;
+}
+
+#navButton div {
+    width: 45px;
+    height: 6px;
+    background-color: #ddd;
+    margin: 8px 0;
+    transition: box-shadow 0.5s, opacity 0.5s, transform 0.5s, border 0.5s;
+}
+
+#navBg {
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: #012;
+    opacity: 0.95;
+    width: 100vw;
+    height: 100vh;
+    z-index:2;
+    transition: opacity 0.5s;
+}
+
+#navHome {
+    border-left: 3px solid;
+}
+
+#navContact {
+    border-right:3px solid;
+}
+
+
+/* Index Nav Buttons */
+
+.indexNavContainer {
+    justify-self: center;
+    position: relative;
+    display:flex;
+    gap: 40px;
+    grid-area: 4 / 2 / 5 / 4;
+    width: 90%;
+    height:125px;
+    margin-top:30px;
+    transition: width 0.5s;
+    transform: translateY(250px);
+}
+.indexNavWrapper {
+    position: relative;
+    flex-grow:1;
+    height:100%;
+    transition: flex-grow 0.5s;
+}
+.indexNavItems{
+    position: absolute;
+    top:calc(50% - 40px);
+    left:calc(50% - 40px);
+    width:80px;
+    height: 80px;
+    transition: width 0.5s, height 0.5s, top 0.5s, left 0.5s;
+}
+.indexNavText{
+    grid-area: 1/1/3/3;
+    height:20px;
+    width:100%;    color: #ddd;
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+    transition: font-size 0.5s, height 0.5s, text-shadow 0.5s, color 0.5s;
+}
+.indexNavBg {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    position:absolute;
+    top:calc(50% - 40px);
+    left:calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    background-color: #091735;
+    border-radius:10%;
+    box-shadow: 0 0 6px -1px #00c8ff;
+    transition: width 0.5s, height 0.5s, top 0.5s, left 0.5s;
+}
+#indexNavItem2 {
+    transition-delay: 200ms;
+}
+#indexNavItem3 {
+    transition-delay: 400ms;
+}
+#indexNavItem4 {
+    transition-delay: 600ms;
+}
+
+@media only screen and (min-width: 800px) {
+    .indexNavWrapper:has(.indexNavItems:hover) {
+        flex-grow: 1.2;
+        transition-delay: 0;
+    }
+    .indexNavContainer:has(.indexNavItems:hover) {
+        width:95%;
+        transition-delay: 0;
+    }
+    .indexNavItems:hover, .indexNavItems:hover .indexNavBg{
+        height:100px;
+        width:100px;
+        top: calc(50% - 50px);
+        left: calc(50% - 50px);
+        transition-delay: 0;
+    }
+    .indexNavItems:hover .indexNavText {
+        font-size:20px;
+        text-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px #00c8ff;
+        color:#bef;
+        transition-delay: 0;
+    }
+    .indexNavItems:hover .indexNavText {
+        height: 25px;
+        transition-delay: 0;
+    }
+}
+
+/* Forms */
+
+.myEmail {
+    grid-area: 2 / 1 / 3 / 3;
+    font-size: 20px;
+    margin-top:30px;
+    align-self: center;
+}
+
+form {
+    grid-area: 3 / 1 / 7 / 3;
+    display:grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 1fr 1fr 3fr 1fr;
+    text-align: center;
+    align-items: center;
+    align-self: start;
+    width: 100%;
+    height: 500px;
+}
+form input, form button, form textarea {
+    width:80%;
+    height: 60%;
+    justify-self: end;
+    font-family: Calibri, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form label {
+    width: 15%;
+    font-size: 20px;
+    justify-self: start;
+}
+
+.mainContact {
+    height: 1000px;
+}
+
+.formLabelName {
+    grid-area: 1 / 2 / 2 / 3;
+    margin-left: 20px;
+}
+.formItemName {
+    grid-area: 1 / 2 / 2 / 3;
+}
+.formLabelEmail {
+    grid-area: 2 / 2 / 3 / 3;
+    margin-left: 20px;
+}
+.formItemEmail {
+    grid-area: 2 / 2 / 3 / 3;
+}
+.formLabelMessage {
+    grid-area: 3 / 2 / 4 / 3;
+}
+.formItemMessage {
+    grid-area: 3 / 2 / 4 / 3;
+    height:70%;
+    justify-self: top;
+    align-self: top;
+}
+.formItemSubmit {
+    grid-area: 4 / 1 / 5 / 5; 
+    margin:0;
+    width: 20%;
+    justify-self: center;
+}
