@@ -355,15 +355,19 @@
     #mainAbout > p {
         font-size: 16px;
     }
+    #header {
+        height:100px;
+    }
     #h1 {
-        font-size: 28px;
-        transform: translate(0, 6px);
+        font-size: 30px;
+        transform: translate(0, -3px);
     }
     #h2 {
-        font-size: 18px;
+        font-size: 20px;
+        transform: translateY(-8px);
     }
     #navButton, #navButton:hover {
-        transform: scale(0.7);
+        transform: scale(0.8) translateY(-22px);
     }
     #mainAbout > #aboutImg1 {
         background-size: 160%;
@@ -386,4 +390,19 @@
         text-align: justify;
         width:72%;
     }
+}
+@media only screen and (max-width: 325px){
+    #h1{
+        font-size:22px;
+        transform: translateY(-6px);
+    }
+    #h2{
+        font-size: 14px;
+        transform: translateY(-10px);
+    }
+    #navButton, #navButton:hover {
+        transform: scale(0.6) translateY(-30px);
+    }
+
+
 }
