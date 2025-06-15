@@ -120,6 +120,7 @@
         width:65%;
         justify-self: center;
         margin-bottom: 30px;
+        font-size: 16px;
     }
     
 
@@ -322,11 +323,20 @@
         transform: scale(1);
         flex-direction: row;
         flex-wrap: wrap;
-        height:350px;
+        height:200px;
         margin-top: -15px;
     }
-    #indexNavItem3, #indexNavItem4 {
-        top:-30px;
+    #indexNavItem1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    #indexNavItem2 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    #indexNavItem3 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    #indexNavItem4 {
+        grid-area: 2 / 2 / 3 / 3;
     }
     #reelStill {
         visibility: visible;
@@ -378,8 +388,6 @@
         height:280px;
     }
     .indexNavContainer {
-        height:350px;
-        margin:0;
         transform: scale(0.9) translateY(-20px);
     }
     #meHome1 {
