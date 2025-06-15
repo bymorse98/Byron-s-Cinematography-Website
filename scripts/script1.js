@@ -80,3 +80,20 @@ window.onresize = function() {
 }
 
 checkWindowSize();
+
+var lastScrollTop = 0;
+    navbar = document.getElementById("header");
+window.addEventListener("scroll", function(){
+    var scrollTop = window.pageYOffset || document
+        .documentElement.scrollTop;
+    if (scrollTop > lastScrollTop){
+        if (window.innerWidth > 430){
+            navbar.style.top="-133px";
+          } else {
+            navbar.style.top = "-100px";
+          }
+    } else {
+        navbar.style.top="0";
+    }
+    lastScrollTop = scrollTop;
+});
