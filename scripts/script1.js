@@ -108,6 +108,6 @@ if (document.documentElement.classList){
         navbar.style.height = "140px";
         h1.style.transform = "translateY(40px)";
         h2.style.transform = "translateY(40px)";
-        navButton.style.transform = "translateY(40px)";
+        navButton.style.transform = "scale(0.8) translateY(40px)";
     }
 }
