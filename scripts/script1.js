@@ -81,6 +81,8 @@ window.onresize = function() {
 
 checkWindowSize();
 
+/*
+// Instagran Browser Check and Adjust
 var h1 = document.getElementById("h1");
 var h2 = document.getElementById("h2");
 var main = document.getElementsByTagName("main")[0];
@@ -89,7 +91,16 @@ function isInstagramBrowser() {
   const userAgent = navigator.userAgent.toLowerCase();
   return userAgent.includes('instagram') || userAgent.includes('fban/fbav');
 }
+if (isInstagramBrowser()){
+      navbar.style.height = "180px";
+      h1.style.transform = "translateY(80px)";
+      h2.style.transform = "translateY(80px)";
+      navButton.style.transform = "scale(0.8) translateY(80px)";
+      main.style.marginTop = "150px";
+}
+*/
 
+// Header Appear and Disappear
 var lastScrollTop = 0;
     navbar = document.getElementById("header");
 window.addEventListener("scroll", function(){
@@ -108,11 +119,3 @@ window.addEventListener("scroll", function(){
     }
     lastScrollTop = scrollTop;
 });
-
-if (isInstagramBrowser()){
-      navbar.style.height = "180px";
-      h1.style.transform = "translateY(80px)";
-      h2.style.transform = "translateY(80px)";
-      navButton.style.transform = "scale(0.8) translateY(80px)";
-      main.style.marginTop = "150px";
-}
