@@ -99,6 +99,9 @@ if (isInstagramBrowser()){
       main.style.marginTop = "150px";
 }
 */
+function isInstagramBrowser() {
+  return false;
+}
 
 // Header Appear and Disappear
 var lastScrollTop = 0;
@@ -107,7 +110,7 @@ window.addEventListener("scroll", function(){
     var scrollTop = window.pageYOffset || document
         .documentElement.scrollTop;
     if (scrollTop > lastScrollTop && window.scrollY > 30){
-      if (isInstagramBrowser) {
+      if (isInstagramBrowser()) {
           navbar.style.top="-180px";
       } else if (window.innerWidth > 430){
             navbar.style.top="-133px";
