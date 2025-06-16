@@ -98,16 +98,17 @@ window.addEventListener("scroll", function(){
     lastScrollTop = scrollTop;
 });
 
-var ua = navigator.userAgent || navigator.vendor || window.opera;
-var isInstagram = (ua.indexOf('Instagram') > -1) ? true : false;
+function isInstagramBrowser() {
+  const userAgent = navigator.userAgent.toLowerCase();
+  return userAgent.includes('instagram') || userAgent.includes('fban/fbav');
+}
+
 var h1 = document.getElementById("h1");
 var h2 = document.getElementById("h2");
 
-if (document.documentElement.classList){
-    if (isInstagram) {
+if (isInstagramBrowser()){
         navbar.style.height = "140px";
         h1.style.transform = "translateY(40px)";
         h2.style.transform = "translateY(40px)";
         navButton.style.transform = "scale(0.8) translateY(40px)";
-    }
 }
