@@ -3,12 +3,21 @@
     /*body{overflow-x:hidden;}*/
 
     #socialContainer *, #socialContainer3 * {
+        transition:none;
         visibility: hidden;
+        opacity: 0;
     }
     #socialContainer2 *, #socialContainer4 * {
         visibility: visible;
         transition: none;
         opacity: 1;
+    }
+    #socialContainer4 * {
+        transform: scale(0.9);
+        grid-area: 3 / 1 / 4 / 3;
+    }
+    #socialContainer4 {
+        width:250px;
     }
     #header {
         background-image: radial-gradient(circle at 0%, #133a89 1%, #102e6a 33%, #001540 66%, #000925 100%);
@@ -412,6 +421,4 @@
     #navButton, #navButton:hover {
         transform: scale(0.6) translateY(-30px);
     }
-
-
 }
