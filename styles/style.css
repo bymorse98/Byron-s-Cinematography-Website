@@ -389,12 +389,29 @@ footer * {
     top:5px;
     left: calc(50% - 125px);
 }
-#socialContainer * {
+#socialContainer3 {
+    grid-area: 3 / 1 / 4 / 3;
+    justify-self: center;
+    width:350px;
+    display:flex;
+    margin-top:45px;
+    left: calc(50% - 125px);
+}
+#socialContainer4 {
+    grid-area: 3 / 1 / 4 / 3;
+    justify-self: center;
+    width:350px;
+    display:flex;
+    margin-top:45px;
+    left: calc(50% - 125px);
+}
+
+#socialContainer *, #socialContainer3 * {
     flex-grow: 1;
     opacity: 0;
     z-index: 2;
 }
-#socialContainer2 * {
+#socialContainer2 *, #socialContainer4 * {
     flex-grow: 1;
     opacity: 1;
     z-index: 1;
@@ -414,7 +431,7 @@ footer * {
     width: 50px;
     transition: opacity 0.5s;
 }
-#socialContainer *:hover {
+#socialContainer *:hover, #socialContainer3 *:hover {
     opacity:1;
 }
 
