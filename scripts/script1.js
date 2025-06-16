@@ -107,8 +107,8 @@ var h1 = document.getElementById("h1");
 var h2 = document.getElementById("h2");
 
 if (isInstagramBrowser()){
-        navbar.style.height = "140px";
-        h1.style.transform = "translateY(40px)";
-        h2.style.transform = "translateY(40px)";
-        navButton.style.transform = "scale(0.8) translateY(40px)";
+        navbar.style.height = "170px";
+        h1.style.transform = "translateY(70px)";
+        h2.style.transform = "translateY(70px)";
+        navButton.style.transform = "scale(0.8) translateY(70px)";
 }
