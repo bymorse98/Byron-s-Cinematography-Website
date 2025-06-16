@@ -215,6 +215,10 @@ h1:hover {
     margin-top:30px;
     align-self: center;
     color:#ddd;
+    transition: text-shadow 0.5s;
+}
+.myEmail:hover {
+    text-shadow: 0 0 4px rgb(92, 173, 255), 0 0 6px #00b3ff;
 }
 
 form {
