@@ -109,9 +109,9 @@ function isInstagramBrowser() {
   return userAgent.includes('instagram') || userAgent.includes('fban/fbav');
 }
 if (isInstagramBrowser()){
-        navbar.style.height = "200px";
-        h1.style.transform = "translateY(100px)";
-        h2.style.transform = "translateY(100px)";
-        navButton.style.transform = "scale(0.8) translateY(100px)";
+        navbar.style.height = "180px";
+        h1.style.transform = "translateY(80px)";
+        h2.style.transform = "translateY(80px)";
+        navButton.style.transform = "scale(0.8) translateY(80px)";
         main.style.marginTop = "150px";
 }
