@@ -9,7 +9,6 @@
     align-self: start;
 }
 
-
 .tiktokContainer {
     position: relative;
     top:0;
@@ -92,16 +91,16 @@
 }
 .still4-1 {
     grid-area: 5 / 2 / 6 / 15;
-    width:99.5%;
+    width:95.5%;
 }
 .still4-2 {
     grid-area: 6 / 2 / 7 / 15;
     margin-top: 0;
-    width:99.5%;
+    width:95.5%;
 }
 .still4-3 {
     grid-area: 5 / 15 / 7 / 26;
-    width:98%;
+    width:104%;
 }
 .still5-1{
     grid-area: 7 / 2 / 8 / 10;
