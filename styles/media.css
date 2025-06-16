@@ -72,7 +72,7 @@
         display:flex;
         align-items: center;
         flex-direction: column;
-        top:60px;
+        top:90px;
         left:0;
         margin:0;
         transition: opacity 0.5s, height 0.5s;
@@ -100,7 +100,7 @@
         display: block;
         text-align: center;
         width:100%;
-        top:32%;
+        top:35%;
     }
 
     .navItem:hover {
