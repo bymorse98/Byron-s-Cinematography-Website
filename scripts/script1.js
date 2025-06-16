@@ -102,6 +102,7 @@ window.addEventListener("scroll", function(){
 
 var h1 = document.getElementById("h1");
 var h2 = document.getElementById("h2");
+var main = document.getElementsByTagName("main")[0];
 
 function isInstagramBrowser() {
   const userAgent = navigator.userAgent.toLowerCase();
@@ -112,4 +113,5 @@ if (isInstagramBrowser()){
         h1.style.transform = "translateY(100px)";
         h2.style.transform = "translateY(100px)";
         navButton.style.transform = "scale(0.8) translateY(100px)";
+        main.style.marginTop = "150px";
 }
