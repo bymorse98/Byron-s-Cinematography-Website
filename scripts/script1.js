@@ -81,6 +81,15 @@ window.onresize = function() {
 
 checkWindowSize();
 
+var h1 = document.getElementById("h1");
+var h2 = document.getElementById("h2");
+var main = document.getElementsByTagName("main")[0];
+
+function isInstagramBrowser() {
+  const userAgent = navigator.userAgent.toLowerCase();
+  return userAgent.includes('instagram') || userAgent.includes('fban/fbav');
+}
+
 var lastScrollTop = 0;
     navbar = document.getElementById("header");
 window.addEventListener("scroll", function(){
@@ -88,7 +97,7 @@ window.addEventListener("scroll", function(){
         .documentElement.scrollTop;
     if (scrollTop > lastScrollTop && window.scrollY > 30){
       if (isInstagramBrowser) {
-          navbar.style.top="-200px";
+          navbar.style.top="-180px";
       } else if (window.innerWidth > 430){
             navbar.style.top="-133px";
           } else {
@@ -100,18 +109,10 @@ window.addEventListener("scroll", function(){
     lastScrollTop = scrollTop;
 });
 
-var h1 = document.getElementById("h1");
-var h2 = document.getElementById("h2");
-var main = document.getElementsByTagName("main")[0];
-
-function isInstagramBrowser() {
-  const userAgent = navigator.userAgent.toLowerCase();
-  return userAgent.includes('instagram') || userAgent.includes('fban/fbav');
-}
 if (isInstagramBrowser()){
-        navbar.style.height = "180px";
-        h1.style.transform = "translateY(80px)";
-        h2.style.transform = "translateY(80px)";
-        navButton.style.transform = "scale(0.8) translateY(80px)";
-        main.style.marginTop = "150px";
+      navbar.style.height = "180px";
+      h1.style.transform = "translateY(80px)";
+      h2.style.transform = "translateY(80px)";
+      navButton.style.transform = "scale(0.8) translateY(80px)";
+      main.style.marginTop = "150px";
 }
