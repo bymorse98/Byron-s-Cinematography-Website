@@ -98,17 +98,16 @@ window.addEventListener("scroll", function(){
     lastScrollTop = scrollTop;
 });
 
+var h1 = document.getElementById("h1");
+var h2 = document.getElementById("h2");
+
 function isInstagramBrowser() {
   const userAgent = navigator.userAgent.toLowerCase();
   return userAgent.includes('instagram') || userAgent.includes('fban/fbav');
 }
-
-var h1 = document.getElementById("h1");
-var h2 = document.getElementById("h2");
-
 if (isInstagramBrowser()){
-        navbar.style.height = "170px";
-        h1.style.transform = "translateY(70px)";
-        h2.style.transform = "translateY(70px)";
-        navButton.style.transform = "scale(0.8) translateY(70px)";
+        navbar.style.height = "200px";
+        h1.style.transform = "translateY(100px)";
+        h2.style.transform = "translateY(100px)";
+        navButton.style.transform = "scale(0.8) translateY(100px)";
 }
