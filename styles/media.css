@@ -2,10 +2,10 @@
 @media only screen and (max-width: 800px) {
     /*body{overflow-x:hidden;}*/
 
-    #socialContainer * {
+    #socialContainer *, #socialContainer3 * {
         visibility: hidden;
     }
-#socialContainer2 * {
+    #socialContainer2 *, #socialContainer4 * {
         visibility: visible;
         transition: none;
         opacity: 1;
@@ -412,4 +412,6 @@
     #navButton, #navButton:hover {
         transform: scale(0.6) translateY(-30px);
     }
+
+
 }
