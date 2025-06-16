@@ -314,7 +314,7 @@
         margin-top: 45px;
     }
     .indexNavContainer {
-        grid-area: 6 / 1 / 7 / 4;
+        grid-area: 5 / 1 / 6 / 4;
         display:grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
@@ -324,7 +324,6 @@
         flex-direction: row;
         flex-wrap: wrap;
         height:200px;
-        margin-top: -15px;
     }
     #indexNavItem1 {
         grid-area: 1 / 1 / 2 / 2;
