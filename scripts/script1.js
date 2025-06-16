@@ -86,7 +86,7 @@ var lastScrollTop = 0;
 window.addEventListener("scroll", function(){
     var scrollTop = window.pageYOffset || document
         .documentElement.scrollTop;
-    if (scrollTop > lastScrollTop && window.pageYOffset > 40){
+    if (scrollTop > lastScrollTop && window.scrollY > 60){
         if (window.innerWidth > 430){
             navbar.style.top="-133px";
           } else {
