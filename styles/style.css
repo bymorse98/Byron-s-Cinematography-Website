@@ -12,6 +12,10 @@ body {
     background-color: hwb(220 0% 94%);
     animation-name: introBody;
     animation-duration: 3s;
+    animation-delay: 1ms;
+    -webkit-animation-name: introBody;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 1ms;
 }
 
 header {
@@ -472,6 +476,10 @@ footer * {
     display: inline;
     flex-grow:1;
     opacity: 0;
+    -webkit-animation-name: introText;
+    -webkit-animation-duration: 2.5s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: calc(var(--order) * 100ms);
     animation-name: introText;
     animation-duration: 2.5s;
     animation-fill-mode: forwards;
@@ -490,6 +498,10 @@ footer * {
     animation-duration: 3s;
     animation-delay: 1ms;
     animation-fill-mode: forwards;
+    -webkit-animation-name: introContainer;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 1ms;
+    -webkit-animation-fill-mode: forwards;
 
 }
 .introBg {
@@ -501,4 +513,8 @@ footer * {
     animation-duration: 3s;
     animation-delay: 1ms;
     animation-fill-mode: forwards;
+    -webkit-animation-name: introBg;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 1ms;
+    -webkit-animation-fill-mode: forwards;
 }
