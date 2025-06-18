@@ -438,8 +438,8 @@ footer * {
 }
 
 @keyframes introContainer {
-    0% { opacity: 1;}
-    50% { opacity: 1;}
+    0% { visibility: visible; opacity: 1;}
+    50% { visibility: visible; opacity: 1;}
     99% { visibility: visible; opacity:0;}
     100% { visibility: hidden; opacity:0;}
 }
@@ -465,6 +465,8 @@ footer * {
     text-align: center;
     height:50px;
     z-index: 7;
+
+
 }
 .introText p {
     display: inline;
@@ -475,6 +477,7 @@ footer * {
     animation-fill-mode: forwards;
     animation-delay: calc(var(--order) * 100ms);
 }
+
 .introContainer {
     position: fixed;
     top:0;
@@ -485,7 +488,9 @@ footer * {
     background-color: #000;
     animation-name: introContainer;
     animation-duration: 3s;
+    animation-delay: 1ms;
     animation-fill-mode: forwards;
+
 }
 .introBg {
     width:100%;
@@ -494,5 +499,6 @@ footer * {
     background-color: #091735;
     animation-name: introBg;
     animation-duration: 3s;
+    animation-delay: 1ms;
     animation-fill-mode: forwards;
 }
