@@ -432,6 +432,11 @@
     #myForm {
         height: 550px;
     }
+    .introText {
+        font-size: 40px;
+        width:176px;
+        left: calc(50% - 88px);
+    }
 }
 @media only screen and (max-width: 325px){
     #h1{
