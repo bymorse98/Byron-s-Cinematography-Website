@@ -13,10 +13,9 @@
         opacity: 1;
     }
     #socialContainer4 * {
-        transform: scale(0.9);
         grid-area: 3 / 1 / 4 / 3;
     }
-    #socialContainer4 {
+    #socialContainer3, #socialContainer4 {
         width:250px;
     }
     #header {
@@ -35,9 +34,6 @@
         transform: translate(0, 20px);
         justify-self: start;
         margin: 0 0 0 20px;
-    }
-    h3 {
-        font-size: 28px;
     }
 
     #navContact:hover {
@@ -132,28 +128,38 @@
         font-size: 16px;
     }
     
-
-    form {
-        grid-template-rows: 1fr 2fr 1fr 2fr 1fr 4fr 2fr;
-        height:600px;
-        margin-top: 10px;
+    .mainContact{
+        height:1050px;
+    }
+    #myForm {
+        grid-template-rows: 10px 1fr 10px 1fr 10px 1fr 10px 4fr 1fr;
+        grid-template-columns: 1fr 3fr 1fr; 
+        height:550px;
+    }
+    #myForm * {
+        font-size: 18px;
     }
 
     form label{
         align-self: center;
         justify-self: center;
+        text-align: center;
         font-size: 22px;
         width:100%;
+        height:40px;
+        margin:0;
+        transform: translateY(15px);
     }
     form input, form textarea, form button{
         align-self: start;
         justify-self: center;
-        height:60%;
-        width:75%;
+        height:75%;
+        width:65%;
+        margin:0;
     }
 
     .myEmail {
-        font-size: 22px;
+        font-size: 16px;
     }
 
     .formLabelName {
@@ -170,15 +176,24 @@
     .formItemEmail {
         grid-area: 4 / 1 / 5 / 4;
     }
-    .formLabelMessage{
+    .formLabelPhone{
         grid-area: 5 / 1 / 6 / 4;
+        margin:0;
+    }
+    .formItemPhone {
+        grid-area: 6 / 1 / 7 / 4;
+    }
+    .formLabelMessage{
+        grid-area: 7 / 1 / 8 / 4;
     }
     .formItemMessage {
-        grid-area: 6 / 1 / 7 / 4;
+        grid-area: 8 / 1 / 9 / 4;
         height: 80%;
+        transform: translateY(0);
     }
     .formItemSubmit {
-        grid-area: 7 / 1 / 8 / 4;
+        grid-area: 9 / 1 / 10 / 4;
+        transform: translateY(-20px);
     }
 
     #mainReel {
@@ -376,7 +391,7 @@
         height:100px;
     }
     body > main {
-        margin-top:100px;
+        margin-top:65px;
     }
     #h1 {
         font-size: 30px;
@@ -408,6 +423,15 @@
         text-align: justify;
         width:72%;
     }
+    #copyright, #copyright * {
+        font-size: 14px;
+    }
+    #copyright {
+        bottom:17px;
+    }
+    #myForm {
+        height: 550px;
+    }
 }
 @media only screen and (max-width: 325px){
     #h1{
@@ -420,5 +444,35 @@
     }
     #navButton, #navButton:hover {
         transform: scale(0.6) translateY(-30px);
+    }
+    #copyright, #copyright * {
+        font-size: 10px;
+    }
+    #socialContainer, #socialContainer2, #socialContainer3, #socialContainer4{
+        width:176px;
+        left: calc(50% - 88px);
+    }
+    #socialContainer3 *, #socialContainer4 * {
+        width:30px;
+        height:30px;
+    }
+    #socialContainer *, #socialContainer2 * {
+        width:40px;
+        height:40px;
+    }
+    #imdb, #imdb * {
+        width:70px;
+        height:40px;
+    }
+    #socialContainer3 #imdb, #socialContainer4 #imdb * {
+        width:55px;
+        height:30px;
+    }
+    #myForm {
+        height: 450px;
+        margin-top: 30px;
+    }
+    .mainContact {
+        height: 900px;
     }
 }
