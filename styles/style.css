@@ -465,8 +465,6 @@ footer * {
     text-align: center;
     height:50px;
     z-index: 7;
-
-
 }
 .introText p {
     display: inline;
@@ -477,7 +475,6 @@ footer * {
     animation-fill-mode: forwards;
     animation-delay: calc(var(--order) * 100ms);
 }
-
 .introContainer {
     position: fixed;
     top:0;
@@ -489,7 +486,6 @@ footer * {
     animation-name: introContainer;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-
 }
 .introBg {
     width:100%;
