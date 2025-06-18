@@ -215,68 +215,95 @@ h1:hover {
     margin-top:30px;
     align-self: center;
     color:#ddd;
-    transition: text-shadow 0.5s;
+    text-decoration:none;
+    transition: text-shadow 0.3s;
 }
 .myEmail:hover {
     text-shadow: 0 0 4px rgb(92, 173, 255), 0 0 6px #00b3ff;
+    text-decoration: solid underline #ddd;
 }
 
 form {
-    grid-area: 3 / 1 / 7 / 3;
+    margin-top: 30px;
+    grid-area: 4 / 1 / 8 / 3;
     display:grid;
-    grid-template-columns: 1fr 8fr 1fr;
-    grid-template-rows: 1fr 1fr 3fr 1fr;
+    grid-template-rows: 70px 70px 70px 250px 70px;
     text-align: center;
     align-items: center;
     align-self: start;
     width: 100%;
     height: 500px;
+    margin-top: 50px;
+}
+#myForm {
+    grid-template-columns: 1fr 450px 1fr;
 }
 form input, form button, form textarea {
-    width:80%;
+    width:450px;
     height: 60%;
-    justify-self: end;
-    font-family: Calibri, Helvetica, sans-serif;
+    justify-self: center;
+    font-family: "Calibri", Helvetica, sans-serif;
     font-size: 20px;
+    color:#000;
     font-weight: 500;
+}
+form input::placeholder, form textarea::placeholder {
+    color:#888;
+    font-weight: 900;
+    font-size: 22px;
 }
 
 form label {
-    width: 15%;
+    width: 100px;
     font-size: 20px;
-    justify-self: start;
+    justify-self: end;
+    text-align: end;
+    margin-right: 20px;
 }
 
 .mainContact {
-    height: 1000px;
+    height: 1050px;
+    grid-template-rows: 110px 50px repeat(10, 1fr);
 }
 
 .formLabelName {
-    grid-area: 1 / 2 / 2 / 3;
-    margin-left: 20px;
+    grid-area: 1 / 1 / 2 / 2;
 }
 .formItemName {
     grid-area: 1 / 2 / 2 / 3;
 }
 .formLabelEmail {
-    grid-area: 2 / 2 / 3 / 3;
-    margin-left: 20px;
+    grid-area: 2 / 1 / 3 / 2;
 }
 .formItemEmail {
     grid-area: 2 / 2 / 3 / 3;
 }
-.formLabelMessage {
+.formLabelPhone {
+    grid-area: 3 / 1 / 4 / 2;
+}
+.formItemPhone {
     grid-area: 3 / 2 / 4 / 3;
 }
+.formLabelMessage {
+    grid-area: 4 / 1 / 5 / 2;
+}
 .formItemMessage {
-    grid-area: 3 / 2 / 4 / 3;
+    grid-area: 4 / 2 / 5 / 3;
     height:70%;
     justify-self: top;
     align-self: top;
+    transform:translateY(-20px);
 }
 .formItemSubmit {
-    grid-area: 4 / 1 / 5 / 5; 
+    grid-area: 5 / 1 / 6 / 5; 
     margin:0;
-    width: 20%;
+    width: 100px;
     justify-self: center;
+    height:50px;
+    font-size: 22px;
+    font-weight: 600;
+    transform: translateY(-35px);
+}
+.formItemSubmit:hover {
+    cursor: pointer;
 }
