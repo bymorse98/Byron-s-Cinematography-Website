@@ -1,4 +1,4 @@
-var body = document.getElementById("body")
+var body = document.body;
 var navButton = document.getElementById("navButton");
 var closeButton = document.getElementById("closeButton");
 var pageNav = document.getElementById("pageNav");
