@@ -10,6 +10,8 @@ body {
     height: 100vh;
     color: #ddd;
     background-color: hwb(220 0% 94%);
+}
+#bodyHome {
     animation-name: introBody;
     animation-duration: 3s;
     animation-delay: 1ms;
