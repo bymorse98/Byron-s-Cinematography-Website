@@ -259,6 +259,7 @@ form label {
     justify-self: end;
     text-align: end;
     margin-right: 20px;
+    opacity:0;
 }
 
 .mainContact {
