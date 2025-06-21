@@ -10,6 +10,6 @@ if (sessionStorage.getItem('firstTimeThisSession') === null) {
   sessionStorage.setItem('firstTimeThisSession', 'true');
 } else {
   var introContainer = document.getElementById("introContainer");
+  introContainer.classList.remove("introContainer");
   introContainer.style.visibility = "hidden";
-  introContainer.style.transform = "translateY(-100%)"
 }
