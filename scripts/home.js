@@ -9,5 +9,5 @@ reel.onplay = () => {
 if (sessionStorage.getItem('firstTimeThisSession') === null) {
   sessionStorage.setItem('firstTimeThisSession', 'true');
 } else {
-  document.getElementById("introContainer").classList.add("hide");
+  document.querySelector("introContainer").classList.add("hide");
 }
