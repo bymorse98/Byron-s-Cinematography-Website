@@ -9,5 +9,7 @@ reel.onplay = () => {
 if (sessionStorage.getItem('firstTimeThisSession') === null) {
   sessionStorage.setItem('firstTimeThisSession', 'true');
 } else {
-  document.getElementById("introContainer").style.visibility = "hidden";
+  var introContainer = document.getElementById("introContainer");
+  introContainer.style.visibility = "hidden";
+  introContainer.style.transform = "translateY(-100%)"
 }
