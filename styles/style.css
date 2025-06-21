@@ -488,7 +488,9 @@ footer * {
     animation-fill-mode: forwards;
     animation-delay: calc(var(--order) * 100ms);
 }
-
+.hide{
+    visibility: hidden;
+}
 .introContainer {
     position: fixed;
     top:0;
