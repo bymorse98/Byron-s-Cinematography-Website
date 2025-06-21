@@ -11,14 +11,6 @@ body {
     color: #ddd;
     background-color: hwb(220 0% 94%);
 }
-#bodyHome {
-    animation-name: introBody;
-    animation-duration: 3s;
-    animation-delay: 1ms;
-    -webkit-animation-name: introBody;
-    -webkit-animation-duration: 3s;
-    -webkit-animation-delay: 1ms;
-}
 
 header {
     position:fixed;
@@ -437,29 +429,31 @@ footer * {
     font-size:16px;
 }
 
-@keyframes introBody {
-    0% {overflow-y: hidden;}
-    80% {overflow-y: hidden;}
-    100% {overflow-y: show;}
-}
-
 @keyframes introContainer {
-    0% { visibility: visible; opacity: 1;}
-    50% { visibility: visible; opacity: 1;}
-    99% { visibility: visible; opacity:0;}
-    100% { visibility: hidden; opacity:0;}
+    0% { visibility: visible; background-color: #000;}
+    50% { visibility: visible; background-color: #000;}
+    99% { visibility: visible; background-color: initial;}
+    100% { visibility: hidden; background-color: initial;}
 }
 @keyframes introBg {
     0% { opacity: 0;}
     5% { opacity:0;}
     50% { opacity: 1;}
-    100% { opacity: 1;}
+    99% { opacity: 0;}
+    100% { opacity: 0;}
 }
 @keyframes introText {
     0% { opacity: 0; transform: translateY(-60px);}
     5% { opacity:0; transform: translateY(-60px);}
     35% { opacity: 1; transform: translateY(0);}
+    90% {opacity: 1; transform: translateY(0);}
     100% {opacity: 1; transform: translateY(0);}
+}
+@keyframes introTextCon {
+    0% { opacity: 1; filter:blur(0);}
+    50% { opacity: 1; filter:blur(0);}
+    99% { opacity: 0; filter:blur(40px);}
+    100% { opacity: 0; filter:blur(40px);}
 }
 .introText {
     position: fixed;
@@ -471,7 +465,14 @@ footer * {
     text-align: center;
     height:50px;
     z-index: 7;
-
+    -webkit-animation-name: introTextCon;
+    -webkit-animation-duration: 2.5s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: 1ms;
+    animation-name: introTextCon;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1ms;
 
 }
 .introText p {
@@ -479,11 +480,11 @@ footer * {
     flex-grow:1;
     opacity: 0;
     -webkit-animation-name: introText;
-    -webkit-animation-duration: 2.5s;
+    -webkit-animation-duration: 2s;
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-delay: calc(var(--order) * 100ms);
     animation-name: introText;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-delay: calc(var(--order) * 100ms);
 }
@@ -497,11 +498,11 @@ footer * {
     z-index: 5;
     background-color: #000;
     animation-name: introContainer;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-delay: 1ms;
     animation-fill-mode: forwards;
     -webkit-animation-name: introContainer;
-    -webkit-animation-duration: 3s;
+    -webkit-animation-duration: 2s;
     -webkit-animation-delay: 1ms;
     -webkit-animation-fill-mode: forwards;
 
@@ -512,11 +513,11 @@ footer * {
     z-index: 6;
     background-color: #091735;
     animation-name: introBg;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-delay: 1ms;
     animation-fill-mode: forwards;
     -webkit-animation-name: introBg;
-    -webkit-animation-duration: 3s;
+    -webkit-animation-duration: 2s;
     -webkit-animation-delay: 1ms;
     -webkit-animation-fill-mode: forwards;
 }
